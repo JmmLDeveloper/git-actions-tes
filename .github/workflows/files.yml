@@ -10,3 +10,9 @@ jobs:
         name: create file.txt
       - run: cat file.txt
         name: print content of file.txt
+      - run: ls
+        name: first ls
+      - uses: actions/checkout@v2
+        name: mi first checkout :D
+      - run: ls
+        name: second ls
