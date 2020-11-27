@@ -1,0 +1,12 @@
+name: mi first github workflow
+
+on: [push]
+
+jobs:
+  main-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello" > file.txt
+        name: create file.txt
+      - run: cat file.txt
+        name: print content of file.txt
