@@ -8,9 +8,12 @@ jobs:
     steps:
     - name: bla bla
       run: |
-        echo ${{ secrets.SSH_HOST }}
-        echo ${{ secrets.SSH_USERNAME }}
-        echo ${{ secrets.SSH_KEY }}
+        echo ${{ secrets.SSH_HOST }} > a.txt
+        echo ${{ secrets.SSH_USERNAME }} > b.txt
+        echo ${{ secrets.SSH_KEY }} > c.txt
+        cat a.txt
+        cat b.txt
+        cat c.txt
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
