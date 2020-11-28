@@ -6,6 +6,11 @@ jobs:
   main-job:
     runs-on: ubuntu-20.04
     steps:
+    - name: bla bla
+      run: |
+        echo ${{ secrets.SSH_HOST }}
+        echo ${{ secrets.SSH_USERNAME }}
+        echo ${{ secrets.SSH_KEY }}
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
