@@ -8,9 +8,9 @@ jobs:
     steps:
     - name: bla bla
       run: |
-        echo ${{ secrets.SSH_HOST }} > a.txt
-        echo ${{ secrets.SSH_USERNAME }} > b.txt
-        echo ${{ secrets.SSH_KEY }} > c.txt
+        echo "arepa" > a.txt
+        echo "pan" > b.txt
+        echo "arroz" > c.txt
         cat a.txt
         cat b.txt
         cat c.txt
