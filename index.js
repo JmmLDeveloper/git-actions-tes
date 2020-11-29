@@ -18,7 +18,7 @@ app.get('/cd',(req,res)=>{
   res.json({continius:'lo que se llama raro'})
 })
 app.get('/pipe',(req,res)=>{
-  res.json({continius:'pipe'})
+  res.json({continius:'AAAAAAAAAAAAAAAAL FIIIIN SIRVE'})
 })
 
 app.listen(4000,()=>{
