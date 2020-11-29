@@ -1,0 +1,12 @@
+name: mi second github workflow
+
+on:  [push]
+
+jobs:
+  main-job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Get code for repo
+        uses: actions/checkout@v2
+      - name: test that prev step work
+        run: ls

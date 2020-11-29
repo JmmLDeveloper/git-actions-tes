@@ -1,6 +1,6 @@
 name: mi first github workflow
 
-on: [push]
+on:  [label]
 
 jobs:
   main-job:
