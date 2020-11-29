@@ -16,4 +16,4 @@ jobs:
           node-version: '15'
       - name: this should fail
         run: |
-          npm jest
+          npm test
