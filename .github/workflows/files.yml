@@ -13,4 +13,6 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
+          cd nomedeja
+          echo $PATH
           bash -c "pm2 --version"
