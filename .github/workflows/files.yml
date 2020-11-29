@@ -3,7 +3,7 @@ name: mi first github workflow
 on:  [label]
 
 jobs:
-  main-job:
+  main-job: 
     runs-on: ubuntu-20.04
     steps:
     - name: executing remote ssh commands using password
