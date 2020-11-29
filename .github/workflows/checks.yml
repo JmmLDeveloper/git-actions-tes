@@ -1,6 +1,9 @@
 name: mi second github workflow
 
-on:  [push]
+on:
+  pull_request:
+    branches:
+      - staging
 
 jobs:
   main-job:
@@ -12,5 +15,5 @@ jobs:
         run: ls
       - name: this should fail
         run: |
-          node --version
+          nodes --version
           npm --version
