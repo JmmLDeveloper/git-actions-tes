@@ -6,13 +6,12 @@ jobs:
   main-job:
     runs-on: ubuntu-20.04
     steps:
-      - run: echo "hello" > file.txt
-        name: create file.txt
-      - run: cat file.txt
-        name: print content of file.txt
-      - run: ls
-        name: first ls
-      - uses: actions/checkout@v1
-        name: mi first checkout :D
-      - run: ls
-        name: second ls
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          pwd
+          ls
