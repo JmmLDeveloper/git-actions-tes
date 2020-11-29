@@ -15,6 +15,4 @@ jobs:
         script: |
           cd action
           git pull --no-edit origin staging
-          npm install
-          pm2 delete "action-app" || true
-          pm2 start index.js --name "action app"
+          ls
