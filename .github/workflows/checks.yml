@@ -10,3 +10,5 @@ jobs:
         uses: actions/checkout@v2
       - name: test that prev step work
         run: ls
+      - name: this should fail
+        run: node --version
