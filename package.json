@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "npm jest"
+    "test": "npx jest"
   },
   "dependencies": {
     "express": "^4.17.1",
