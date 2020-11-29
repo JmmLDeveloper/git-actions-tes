@@ -17,9 +17,7 @@ jobs:
           export PATH="/home/ubuntu/.local/bin:/home/ubuntu/.nvm/versions/node/v15.0.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
           cd action
           eval "$(ssh-agent -s)"
-          ssh -T git@github.com
-          git remote -v
-          whoami
+          ssh-add ~/.ssh/rti_repo
           git pull --no-edit origin staging
           npm install
           pm2 delete "action-app"
