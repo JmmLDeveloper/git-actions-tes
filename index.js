@@ -6,6 +6,14 @@ app.get('/',(req,res)=>{
   res.send('semothing that is real')
 })
 
+app.get('/aaa',(req,res)=>{
+  res.send('this is aaa endpoint')
+})
+
+app.get('/bbb',(req,res)=>{
+  res.send('this is bbb endpoint')
+})
+
 app.listen(4000,()=>{
     console.log('listening on port 4000')
 })
