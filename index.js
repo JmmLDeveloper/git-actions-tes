@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/',(req,res)=>{
-  res.send('se actualizo ?')
+  res.send('semothing that is real')
 })
 
 app.listen(4000,()=>{
