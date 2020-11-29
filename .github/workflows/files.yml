@@ -13,6 +13,4 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd action
-          git pull --no-edit origin staging
-          ls
+          pm2 --version
