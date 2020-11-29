@@ -14,10 +14,10 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script-stop : false
         script: |
-          git remote -v
-          whoami
           export PATH="/home/ubuntu/.local/bin:/home/ubuntu/.nvm/versions/node/v15.0.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
           cd action
+          git remote -v
+          whoami
           git pull --no-edit origin staging
           npm install
           pm2 delete "action-app"
