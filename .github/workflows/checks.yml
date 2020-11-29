@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Get code for repo
         uses: actions/checkout@v2
-      - name: test that prev step work
-        run: ls
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '15'
       - name: this should fail
         run: |
-          nodes --version
-          npm --version
+          npm jest
