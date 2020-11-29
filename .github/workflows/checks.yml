@@ -11,4 +11,6 @@ jobs:
       - name: test that prev step work
         run: ls
       - name: this should fail
-        run: node --version
+        run: |
+          node --version
+          npm --version
