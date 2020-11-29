@@ -17,6 +17,9 @@ app.get('/bbb',(req,res)=>{
 app.get('/cd',(req,res)=>{
   res.json({continius:'lo que se llama raro'})
 })
+app.get('/pipe',(req,res)=>{
+  res.json({continius:'pipe'})
+})
 
 app.listen(4000,()=>{
     console.log('listening on port 4000')
