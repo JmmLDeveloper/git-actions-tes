@@ -15,7 +15,7 @@ app.get('/bbb',(req,res)=>{
 })
 
 app.get('/cd',(req,res)=>{
-  res.json({continius:'tetero'})
+  res.json({continius:'lo que se llama raro'})
 })
 
 app.listen(4000,()=>{
