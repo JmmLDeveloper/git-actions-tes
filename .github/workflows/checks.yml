@@ -1,9 +1,6 @@
 name: mi second github workflow
 
-on:
-  pull_request:
-    branches:
-      - staging
+on: [label]
 
 jobs:
   main-job:
